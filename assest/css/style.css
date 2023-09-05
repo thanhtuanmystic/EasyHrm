@@ -841,7 +841,6 @@ header {
   font-weight: 600;
   line-height: 211%; /* 33.76px */
   display: inline-flex;
-  padding: 8px 265px 8px 16px;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -851,6 +850,9 @@ header {
 }
 
 /* Câu hỏi thường gặp */
+.click-question {
+  font-size: 16px !important;
+}
 #hrm_question {
 }
 #list_question {
