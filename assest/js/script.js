@@ -97,5 +97,26 @@ if (width > 767) {
     scrollMouse1(".animation_img_right", "slide-right");
     scrollMouse1(".animation_img_left", "slide-left");
   });
-
 }
+
+function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (end - start) + start);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+const count2000 = document.getElementById("count2000");
+const count10 = document.getElementById("count10");
+const count200000 = document.getElementById("count200000");
+const count50 = document.getElementById("count50");
+animateValue(count2000, 0, 2000, 2000);
+animateValue(count10, 0, 10, 2000);
+animateValue(count200000, 0, 200000, 2000);
+animateValue(count50, 0, 50, 2000);

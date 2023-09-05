@@ -524,7 +524,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 80px;
+  gap: 5%;
 }
 .brand-list div img {
   width: 100%;
@@ -1032,21 +1032,24 @@ footer {
     padding: 10px;
   }
   .show {
-    height: 300px;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
     text-align: left;
   }
   .header-list {
     width: 100%;
-    --bs-scroll-height: 100px !important;
+    --bs-scroll-height: 10000px !important;
   }
   .consulation-header {
     margin-left: 0;
+  }
+  .search-icon,
+  .hotline-header,
+  .consulation-header {
+    display: none;
   }
 }
 @media (max-width: 480px) {
