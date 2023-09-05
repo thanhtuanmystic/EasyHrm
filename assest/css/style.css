@@ -55,7 +55,6 @@ ul li {
 /* Header */
 
 header {
-  height: 100px;
   width: 100%;
   position: fixed;
   left: 0;
@@ -303,8 +302,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 0 40px;
-  /* width: 383px; */
-  height: 220px;
+  min-height: 220px;
   border-radius: 8px;
   border: 1px solid #bdc9e2;
   background: #fff;
@@ -445,8 +443,7 @@ header {
   padding-bottom: 140px;
 }
 .customer-box {
-  width: 383px;
-  height: 340px;
+  min-height: 340px;
   border-radius: 8px;
   border: 1.5px solid var(--orange-5, #fef0e9);
   background: #fff;
@@ -493,7 +490,6 @@ header {
   text-align: justify;
 }
 .customer-seperation {
-  width: 335px;
   height: 1px;
   flex-shrink: 0;
   background: #9dafd3;
@@ -543,7 +539,7 @@ header {
   border: 1.5px solid var(--orange-5, #fef0e9);
   background: #fff;
   box-shadow: 8px 8px 11px 0px rgba(23, 45, 88, 0.2);
-  height: 585px;
+  min-height: 585px;
   position: relative;
   padding: 30px;
 }
@@ -704,8 +700,8 @@ header {
   margin-top: 40px;
 }
 .showing-detail {
-  width: 357px;
-  height: 350px;
+  /* width: 357px; */
+  min-height: 350px;
   border-radius: 8px;
   border: 1px solid rgba(38, 56, 86, 0.3);
   background: #fff;
@@ -1006,4 +1002,70 @@ footer {
   font-weight: 400;
   line-height: 20px; /* 142.857% */
   margin-top: 165px;
+}
+/* Responsive */
+@media (max-width: 1023px) {
+  .featured-box {
+    height: 280px;
+  }
+  .banner-seperation-text {
+    font-size: 16px;
+  }
+  .banner-seperation-btn {
+    display: none;
+  }
+  .price-quote {
+    min-height: 400px;
+  }
+
+  .price-quote-detail {
+    display: none;
+  }
+  .display_responsive {
+    display: block;
+  }
+  .form-register {
+    padding: 0;
+  }
+  .form-element input {
+    /* padding: 0; */
+    padding: 10px;
+  }
+  .show {
+    height: 300px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+  }
+  .header-list {
+    width: 100%;
+    --bs-scroll-height: 100px !important;
+  }
+  .consulation-header {
+    margin-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .banner-seperation-text {
+    font-size: 8px;
+  }
+  .brand-list {
+    display: block;
+  }
+  .hrm-ref2 {
+    font-size: 12px;
+  }
+  .hrm-title {
+    font-size: 20px;
+  }
+  #hrm_form_register {
+    padding: 0;
+  }
+  .form-title {
+    font-size: 16px;
+  }
 }
