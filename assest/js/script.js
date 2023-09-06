@@ -66,7 +66,7 @@ function scrollMouse(classFirst, nameClassAdd) {
     if (
       spaceBottom < scrollBottom - $(window).height() &&
       spaceTop < scrollSpaceTop + $(window).height()
-    ) {
+    ) { 
       $(this).addClass(nameClassAdd);
     } else {
       $(this).removeClass(nameClassAdd);

@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin-top: 100px;
+}
 a {
   text-decoration: none;
   color: #fff;
@@ -134,7 +140,6 @@ header {
 }
 /* Banner HRM */
 #hrm_banner {
-  margin-top: 100px;
 }
 .banner-picture-right {
   width: 100%;
@@ -1063,13 +1068,19 @@ footer {
   .hrm-ref2 {
     font-size: 12px;
   }
-  .hrm-title {
-    font-size: 20px;
+  .hrm-title-mobile {
+    font-size: 12px !important;
   }
   #hrm_form_register {
-    padding: 0;
+    padding: 10px;
   }
   .form-title {
     font-size: 16px;
+  }
+  #hrm_signature_customer {
+    display: none;
+  }
+  .price-quote {
+    margin-bottom: 10px;
   }
 }
