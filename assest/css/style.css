@@ -539,7 +539,7 @@ header {
   border: 1.5px solid var(--orange-5, #fef0e9);
   background: #fff;
   box-shadow: 8px 8px 11px 0px rgba(23, 45, 88, 0.2);
-  min-height: 585px;
+  min-height: 500px;
   position: relative;
   padding: 30px;
 }
@@ -575,8 +575,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 58px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .quote-title-icon {
   width: 57px;
@@ -978,7 +977,7 @@ footer {
   font-weight: 700;
   line-height: 211%;
   margin-left: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .list-social-media {
   display: flex;

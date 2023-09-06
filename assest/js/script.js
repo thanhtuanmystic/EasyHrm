@@ -93,7 +93,7 @@ function scrollMouse1(classFirst, nameClassAdd) {
 var width = $(window).width();
 if (width > 767) {
   $(window).scroll(function () {
-    scrollMouse1(".featured-box", "zoomIn");
+    scrollMouse1(".featured-box", "slide-right");
     scrollMouse1(".animation_img_right", "slide-right");
     scrollMouse1(".animation_img_left", "slide-left");
   });
