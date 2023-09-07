@@ -448,7 +448,8 @@ header {
   padding-bottom: 140px;
 }
 .customer-box {
-  min-height: 340px;
+  width: 344px;
+  height: 204px;
   border-radius: 8px;
   border: 1.5px solid var(--orange-5, #fef0e9);
   background: #fff;
@@ -459,13 +460,12 @@ header {
 .customer-info {
   display: inline-flex;
   align-items: center;
-  gap: 20px;
+  gap: 8px;
   justify-content: center;
-  margin-top: 24px;
 }
 .customer-avt {
-  width: 64px;
-  height: 64px;
+  width: 40px;
+  height: 40px;
 }
 .customer-name {
   color: #000;
@@ -479,20 +479,18 @@ header {
   color: #66738c;
   text-align: center;
   font-family: Nunito Sans;
-  font-size: 12px;
+  font-size: 10px;
   font-style: normal;
   font-weight: 500;
-  line-height: 236%; /* 28.32px */
+  line-height: 236%; /* 23.6px */
 }
 .customer-share {
   color: var(--gray-1, #151f2f);
   font-family: Nunito Sans;
-  font-size: 14px;
+  font-size: 10px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 184.5%; /* 25.83px */
-  margin-top: 15px;
-  text-align: justify;
+  font-weight: 400;
+  line-height: 160%; /* 16px */
 }
 .customer-seperation {
   height: 1px;
@@ -503,7 +501,7 @@ header {
 .customer-rate {
   display: flex;
   flex-direction: row-reverse;
-  height: 60px;
+  height: 30px;
   display: flex;
   align-items: center;
 }
@@ -519,6 +517,83 @@ header {
   justify-content: center;
   align-items: center;
   margin-top: 60px;
+}
+.customer_stories_background {
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  padding: 100px 0;
+  background: #fef0e9;
+}
+.customer_stories_background img {
+  width: 100%;
+}
+#customer-box-2 {
+  position: absolute;
+  top: 350px;
+  left: 50px;
+}
+#customer-box-1 {
+  position: absolute;
+  right: 103px;
+  top: 75px;
+}
+#customer-box-3 {
+  position: absolute;
+  right: 42px;
+  bottom: 42px;
+}
+#customer-box-4 {
+  position: absolute;
+  right: 42px;
+  bottom: 42px;
+}
+#customer-box-5 {
+  position: absolute;
+  top: 350px;
+  left: 50px;
+}
+.maps-box {
+  position: relative;
+}
+.avt1 {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  width: 54px;
+  height: 54px;
+}
+.avt2 {
+  position: absolute;
+  top: 50%;
+  left: 300px;
+  width: 54px;
+  height: 54px;
+}
+.avt3 {
+  position: absolute;
+  bottom: 200px;
+  right: 0;
+  width: 54px;
+  height: 54px;
+}
+.avt4 {
+  position: absolute;
+  bottom: 0;
+  left: 150px;
+  width: 54px;
+  height: 54px;
+}
+.avt5 {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  width: 54px;
+  height: 54px;
+}
+.set-z-index {
+  /* z-index: 99; */
+  display: block;
 }
 /* Khách hàng tiêu biểu */
 #hrm_signature_customer {
