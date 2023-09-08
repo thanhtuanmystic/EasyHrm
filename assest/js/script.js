@@ -53,7 +53,6 @@ $(document).ready(function () {
     }
   });
 
-
   $(".avt-click").click(function () {
     var index2 = $(this).closest(".avt-click").index();
     index2 = index2 - 1;
@@ -67,7 +66,6 @@ $(document).ready(function () {
     $(".customer-box:eq( 1 )").css("display", "block");
     $(".customer-box:eq(" + index2 + ")").css("display", "block");
   });
-
 });
 
 function scrollMouse(classFirst, nameClassAdd) {
