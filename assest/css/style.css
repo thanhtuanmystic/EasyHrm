@@ -456,6 +456,7 @@ header {
   padding: 16px;
   /* 1 */
   box-shadow: 8px 8px 11px 0px rgba(23, 45, 88, 0.2);
+  margin-bottom: 10px;
 }
 .customer-info {
   display: inline-flex;
@@ -521,6 +522,8 @@ header {
 .customer_stories_background {
   position: relative;
   width: 100%;
+  min-height: 788px;
+  flex-shrink: 0;
   border-radius: 16px;
   padding: 100px 0;
   background: #fef0e9;
@@ -529,67 +532,72 @@ header {
   width: 100%;
 }
 #customer-box-2 {
-  position: absolute;
   top: 350px;
   left: 50px;
 }
 #customer-box-1 {
-  position: absolute;
   right: 103px;
   top: 75px;
 }
 #customer-box-3 {
-  position: absolute;
   right: 42px;
   bottom: 42px;
 }
 #customer-box-4 {
-  position: absolute;
   right: 42px;
   bottom: 42px;
+  display: none;
 }
 #customer-box-5 {
-  position: absolute;
   top: 350px;
   left: 50px;
+  display: none;
 }
+
 .maps-box {
   position: relative;
+  width: 328.89px;
+  height: 663.1px;
 }
+
 .avt1 {
   position: absolute;
   top: 0;
   left: 200px;
-  width: 54px;
-  height: 54px;
+  width: 88px;
+  height: 88px;
 }
 .avt2 {
-  position: absolute;
-  top: 50%;
-  left: 300px;
-  width: 54px;
-  height: 54px;
-}
-.avt3 {
-  position: absolute;
-  bottom: 200px;
-  right: 0;
-  width: 54px;
-  height: 54px;
-}
-.avt4 {
-  position: absolute;
-  bottom: 0;
-  left: 150px;
-  width: 54px;
-  height: 54px;
-}
-.avt5 {
   position: absolute;
   top: 50px;
   left: 10px;
   width: 54px;
   height: 54px;
+}
+.avt3 {
+  position: absolute;
+  top: 35%;
+  left: 150px;
+  width: 54px;
+  height: 54px;
+}
+.avt4 {
+  position: absolute;
+  bottom: 200px;
+  right: 0;
+  width: 88px;
+  height: 88px;
+}
+.avt5 {
+  position: absolute;
+  bottom: 0;
+  left: 150px;
+  width: 88px;
+  height: 88px;
+}
+.avt-click:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 .set-z-index {
   /* z-index: 99; */
