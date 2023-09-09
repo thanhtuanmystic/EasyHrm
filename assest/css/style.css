@@ -311,9 +311,16 @@ header {
   margin-left: 20px;
   border: none;
 }
+.loadmore-btn:hover,
+.application-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
 /* Easyhrm có gì nổi bật */
 #hrm_featured {
   background: rgba(254, 240, 233, 0.6);
+  padding-top: 70px;
+  padding-bottom: 76px;
   margin-top: 140px;
 }
 .featured-box {
@@ -1178,7 +1185,7 @@ footer {
   .hrm-content {
     font-size: 12px !important;
   }
- 
+
   #hrm_form_register {
     padding: 10px;
   }
