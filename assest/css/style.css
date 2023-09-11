@@ -167,9 +167,14 @@ header {
   line-height: 173.5%; /* 55.52px */
   margin-bottom: 46px;
 }
-.statistics {
-  margin-bottom: 35px;
+
+.featured-data {
+  min-height: 122px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .slogan img {
 }
 .button-banner {
@@ -213,18 +218,27 @@ header {
   margin-left: 20px;
   box-shadow: -1px 9px 10px 0px rgba(241, 89, 34, 0.2);
 }
+.data-box {
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #bdc9e2;
+  background: #fff;
+  /* 1 */
+  box-shadow: 8px 8px 11px 0px rgba(23, 45, 88, 0.2);
+}
 .data {
   position: relative;
 }
 .number-data {
   font-family: Nunito Sans;
-  font-size: 40px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 800;
-  line-height: 150%; /* 60px */
+  line-height: 150%;
   background: var(
     --gradient,
-    linear-gradient(322deg, #f15922 0%, #f6921e 100%)
+    linear-gradient(287deg, #f15922 12.78%, #f6921e 95.8%)
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -232,12 +246,12 @@ header {
   display: inline;
 }
 .plus {
-  color: var(--blue-1, #172d58);
+  color: var(--Blue1, #172d58);
   font-family: Nunito Sans;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 800;
-  line-height: 150%; /* 36px */
+  line-height: 150%; /* 30px */
   display: inline;
   position: absolute;
   top: 0;
@@ -245,10 +259,10 @@ header {
 .data-explain {
   color: var(--gray-3, #6e7a8e);
   font-family: Nunito Sans;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 800;
-  line-height: 150%; /* 24px */
+  font-weight: 700;
+  line-height: 150%; /* 21px */
 }
 /* Chúng tôi là easyhrm */
 .seperation-fix {
@@ -336,27 +350,6 @@ header {
   margin-bottom: 24px;
   /* 1 */
   box-shadow: 8px 8px 11px 0px rgba(23, 45, 88, 0.2);
-}
-.featured-icon {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 10px;
-}
-.featured-icon img {
-  width: 100%;
-}
-.featured-content {
-  color: var(--gray-2, #263856);
-  text-align: center;
-  font-family: Nunito Sans;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 184%; /* 36.8px */
-}
-.second-row {
-  /* margin-left: 50%;
-  transform: translateX(-50%); */
 }
 
 /* Giải pháp quản lý nhân sự toàn diện, dễ dàng */
@@ -652,9 +645,15 @@ header {
   border: 1.5px solid var(--orange-5, #fef0e9);
   background: #fff;
   box-shadow: 8px 8px 11px 0px rgba(23, 45, 88, 0.2);
-  min-height: 500px;
+  min-height: 250px;
   position: relative;
   padding: 30px;
+}
+.showdetail {
+  display: none;
+}
+.minhight-500{
+  min-height: 500px !important;
 }
 .hrm-title {
   color: var(--orange-2, #f26522);
@@ -668,6 +667,7 @@ header {
   padding-top: 40px;
   margin-bottom: 60px;
   position: relative;
+  text-transform: uppercase;
 }
 .hrm-title img {
   width: 61px;

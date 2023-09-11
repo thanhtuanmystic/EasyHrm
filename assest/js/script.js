@@ -1,10 +1,14 @@
 $(document).ready(function () {
   $(".detail-btn").click(function () {
-    // Ẩn tất cả các phần div có class là "price-detail-showing"
     $(".price-detail-showing").hide();
-    // Tìm phần div "price-detail-showing" tương ứng với nút đã nhấp
     var index = $(this).closest(".col-md-4").index();
     $(".price-detail-showing:eq(" + index + ")").slideToggle("slow");
+  });
+  $(".showdetail-btn").click(function () {
+    // $(".showdetail").hide();
+    // $(".showdetail").removeClass("minhight-500");
+    $(this).parent().find(".showdetail").addClass("minhight-500");
+    $(this).parent().find(".showdetail").slideToggle();
   });
   $(".click-question").click(function () {
     if (
@@ -134,3 +138,10 @@ animateValue(count2000, 0, 2000, 2000);
 animateValue(count10, 0, 10, 2000);
 animateValue(count200000, 0, 200000, 2000);
 animateValue(count50, 0, 50, 2000);
+
+$(document).ready(function () {
+  setTimeout(function () {
+    $(count2000).html("2.000");
+    $(count200000).html("200.000");
+  }, 2000);
+});
