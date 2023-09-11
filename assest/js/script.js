@@ -5,8 +5,6 @@ $(document).ready(function () {
     $(".price-detail-showing:eq(" + index + ")").slideToggle("slow");
   });
   $(".showdetail-btn").click(function () {
-    // $(".showdetail").hide();
-    // $(".showdetail").removeClass("minhight-500");
     $(this).parent().find(".showdetail").addClass("minhight-500");
     $(this).parent().find(".showdetail").slideToggle();
   });

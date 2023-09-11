@@ -67,6 +67,9 @@ header {
   top: 0;
   z-index: 999999;
 }
+.mobile-btn {
+  display: none;
+}
 .logo {
   width: 126px;
   height: 36px;
@@ -166,6 +169,7 @@ header {
   font-weight: 800;
   line-height: 173.5%; /* 55.52px */
   margin-bottom: 46px;
+  text-transform: uppercase;
 }
 
 .featured-data {
@@ -466,7 +470,7 @@ header {
   padding-bottom: 140px;
 }
 .customer-box {
-  width: 344px;
+  min-width: 344px;
   height: 204px;
   border-radius: 8px;
   border: 1.5px solid var(--orange-5, #fef0e9);
@@ -581,27 +585,27 @@ header {
 .avt1 {
   position: absolute;
   top: 0;
-  left: 200px;
+  left: 45%;
   width: 88px;
   height: 88px;
 }
 .avt2 {
   position: absolute;
-  top: 50px;
-  left: 10px;
+  top: 10%;
+  left: 10%;
   width: 54px;
   height: 54px;
 }
 .avt3 {
   position: absolute;
   top: 35%;
-  left: 150px;
+  left: 47%;
   width: 54px;
   height: 54px;
 }
 .avt4 {
   position: absolute;
-  bottom: 200px;
+  bottom: 25%;
   right: 0;
   width: 88px;
   height: 88px;
@@ -609,7 +613,7 @@ header {
 .avt5 {
   position: absolute;
   bottom: 0;
-  left: 150px;
+  left: 35%;
   width: 88px;
   height: 88px;
 }
@@ -652,7 +656,7 @@ header {
 .showdetail {
   display: none;
 }
-.minhight-500{
+.minhight-500 {
   min-height: 500px !important;
 }
 .hrm-title {
@@ -1152,6 +1156,9 @@ footer {
     align-items: center;
     flex-direction: column;
     text-align: left;
+  }
+  .mobile-btn {
+    display: block;
   }
   .header-list {
     width: 100%;
